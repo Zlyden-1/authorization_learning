@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: m4vdoshin/taxi_ais:test
+    volumes:
+      - media:/taxi_ais/media
+      # - /home/logs:/taxi_ais/debug.log
+    command:
+      python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"

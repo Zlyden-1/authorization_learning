@@ -3,4 +3,4 @@ RUN apt-get update && apt-get install -y gcc libpq-dev
 WORKDIR /app
 COPY . /app/
 RUN pip install --no-cache-dir -r requirements.txt
-RUN python manage.py collectstatic --noinput
+# RUN python manage.py collectstatic --noinput
