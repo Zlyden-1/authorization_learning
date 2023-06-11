@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'drf_spectacular',
-    'jwt_auth'
+    'jwt_auth',
+    'posts',
 ]
 
 REST_FRAMEWORK = {
